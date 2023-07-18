@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown</title>
+
+</head>
+<style>
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   list-style: none;
+   text-decoration: none;
+}
+body{
+    background-image: url(./images/BG.jpg);
+    height: 100vh;
+    background-size: cover ;
+    margin: 0 auto;
+}
+.menu{
+    width: 80%;
+    height: 20px;
+    margin: 0 auto;
+
+}
+.menu ul{
+    padding: 0;
+    /* overflow: hidden; */
+
+}
+.menu ul li{
+    float: left;
+    background: #000;
+    color:#fff;
+    width: 200px;
+    line-height: 50px;
+    font-size: 20px;
+    text-align: center;
+    opacity: 02;
+    text-transform: capitalize;
+    /* margin-top: 15px; */
+}
+.menu ul li ul{
+    display: none;
+}
+.menu ul li:hover ul{
+    display: block
+}
+.menu ul li ul li ul{
+    display: none;
+}
+.menu ul li ul li:hover ul{
+    display: block
+}
+.menu ul li:hover{
+    background-color: #32cd32;
+    opacity: 0.8;
+}
+.menu ul li ul li{
+    position: relative;
+
+}
+.menu ul li ul li ul{
+    position: absolute;
+    left: 200px;
+    top: 0;
+}
+</style>
+<body>
+    <div class="menu">
+        <ul>
+            <li>aus.
+                <ul>
+                    <li>nirav</li>
+                </ul>
+            </li>
+            <li>india
+                <ul>
+                    <li>kishan</li>
+                    <li>hiten</li>
+                    <li>jaydeep</li>
+                    <li>pande</li>
+                    <li>jasmin
+                        <ul>
+                            <li>mddmssv</li>
+                            <li>mddmssv</li>
+                            <li>mddmssv</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>canada
+                <ul>
+                    <li>kartik</li>
+                    <li>maulik</li>
+                    <li>punit</li>
+                </ul>
+            </li>
+            <li>uk
+                <ul>
+                    <li>maulik</li>
+                    <li>akash</li>
+                    <li>akshay</li>
+                </ul>
+            </li>
+            <li>usa
+                <ul>
+                    <li>chetan</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

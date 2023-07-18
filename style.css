@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.1)),url(./images/BG.jpg);
+    background-size: cover;  
+} 
+header nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    width: 100%;
+    background:rgba(0,0,0,0.32);
+    text-transform: uppercase;
+    
+}
+header nav .logo{
+    width: 25%;
+    text-align: center;
+}
+header nav .menu{ 
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+header nav .menu a{
+    width: 25%;
+    color: white;
+    font-weight:bold;
+}
+header nav .menu a:first-child{
+    color: #00b894;
+}
+header main {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:white;
+} 
+header main section h3{
+    font-size:35px;
+    font-weight: 200;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px black;
+}
+.animate__heartBeat{
+    animation: heartBeat infinite;
+}
+
+header main section h1{                                     
+    margin: 30px 0 20px 0;
+   font-size:75px;
+    font-weight: 700;
+    text-shadow: 2px 1px 5px black;
+    text-transform: uppercase;
+}
+header main section p{
+    color: #eee;
+      font-size:25px;
+    word-spacing: 2px;
+    margin-bottom: 25px;
+    text-shadow: 1px 1px 2px black;
+
+}
+header main section a{
+    padding: 12px 13px;
+    border-radius: 3px;
+    outline:none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    transition: all 0.5S ease;
+}
+header main section .btn-1{
+    background:#fff;
+    color: #000;
+    
+}
+header main section .btn-1:hover{
+    background: #00b894;
+    color: #000;
+}
+header main section .btn-2{
+    background: #00b894;
+    color: #000;
+}
+header main section .btn-2:hover{
+    background:#fff;
+    color: #000;
+}
+.change::after{
+    content: "";
+    animation:changetext 5s infinite linear;
+    color: #00b894;
+}
+@keyframes changetext{
+    0%{content:"Kolkata"}
+    20%{content:"Delhi"}
+    65%{content:"Kerala"}
+    60%{content:"Gujarat"}
+    100%{content:"Mumbai"}
+}
